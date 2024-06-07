@@ -1,0 +1,112 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: calc(100% - 16px); /* to accommodate padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.theme-toggle-button {
+  margin-top: 20px;
+  width: auto;
+  background-color: #28a745;
+}
+
+.theme-toggle-button:hover {
+  background-color: #218838;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+/* Theme Colors */
+:root {
+  --background-color: #f0f2f5; /* default theme background color */
+}
+
+/* Light Theme */
+.light-theme {
+  background-color: #f0f2f5;
+  color: black;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+/* Additional styles for dark theme elements */
+.dark-theme form {
+  background: #444;
+  color: white;
+}
+
+.dark-theme input {
+  background: #555;
+  border: 1px solid #666;
+  color: white;
+}
+
+.dark-theme button {
+  background-color: #007bff;
+  color: white;
+}
+
+.dark-theme button:hover {
+  background-color: #0056b3;
+}
+
