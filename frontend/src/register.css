@@ -1,0 +1,93 @@
+/* register.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    height: 100%;
+  }
+  
+  
+  .register-form {
+    margin-left: 35%;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  .register-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .register-form div {
+    margin-bottom: 20px;
+  }
+  
+  .register-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="password"],
+  .register-form input[type="date"] {
+    width: calc(100% - 16px); /* to accommodate padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .register-form button {
+    width: 50%;
+    padding: 12px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-form .theme-toggle-button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: green; /* Changed to green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-form .theme-toggle-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .register-form .error-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+  }
+  
+  .register-form .success-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+  }
